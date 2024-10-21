@@ -454,7 +454,6 @@ h6,
   top: 0rem;
   left: 0rem;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -594,6 +593,45 @@ h6,
 .protects{
   width: 27.6rem;
   height: 74.4rem;
+}
+.protects__sheild{
+  position: absolute;
+  top: 188rem;
+  gap: 2rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  width:25rem ;
+  height:20rem;
+  background-color: var(--light-gray);
+  opacity: 94%;
+  border-radius: 2rem;
+  border-top-right-radius: 8rem;
+}
+
+.sheild{
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--light-gray);
+  border-radius: 1rem;
+  padding: .5rem;
+}
+.protects__sheild--text-large{
+  font-size: 1.4rem;
+  width: 17.2rem;
+  font-weight: bold;
+  color: var(--light-blue);
+}
+.protects__sheild--text-small{
+  font-size: 1.2rem;
+  width: 23.5rem;
+  color: var(--white);
+}
+.protects__sheild--link{
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 8.9rem;
+  color: var(--light-blue);
 }
 @media only screen and (min-width: 375px) {
   .navbar {
