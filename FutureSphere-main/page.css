@@ -1,0 +1,28 @@
+/* .plan-card-wrapper {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 5px;
+}
+.hero {
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .plan-card-wrapper {
+    margin-top: 8rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .hero {
+    margin-top: 32px;
+  }
+  .hero__title {
+    font-size: 4.8rem;
+  }
+  .hero__body {
+    font-size: 1.6rem;
+    margin-top: 1.6rem;
+  }
+} */
