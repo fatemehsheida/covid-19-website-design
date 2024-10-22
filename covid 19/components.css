@@ -2,8 +2,9 @@
   --primary: #7f56d9;
   --primary-light: #c7a0f9;
   --background: #f9fafb;
-  --dark-blue: #1b152b;
-  --text-gray: #7a7d9c;
+  --dark-blue:#0B153C;
+  --input-gray: #9c9eb459;
+  --gray:#85848481;
   --white: #FFFFFF;
   --light-white: #FFFFFFB2;
   --stroke: #eff0f6;
@@ -16,7 +17,7 @@
   font-weight: bold;
 }
 body {
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 400;
   background-color: var(--background);
  }
@@ -326,11 +327,13 @@ h6,
   display: flex;
   position: absolute;
   flex-direction: column;
-  top: 87rem;
+  top: 85.5rem;
   left: 5rem;
   gap: 2.6rem;
 }
-
+.text--width{
+  width:10rem ;
+}
 .box__vectoe--style{
   display: flex;
   gap: 1rem;
@@ -568,7 +571,7 @@ h6,
 }
 .info__virus{
   width: 29.4rem;
-  height: 102.6rem;
+  height: 96.6rem;
   background-image: url(./44d72135d26cf838b32f4d954c221a6e.jfif);
   padding: 4rem;
   opacity: 95%;
@@ -612,7 +615,7 @@ h6,
 .sheild{
   width: 4rem;
   height: 4rem;
-  background-color: var(--light-gray);
+  /* background-color: var(--light-gray); */
   border-radius: 1rem;
   padding: .5rem;
 }
@@ -633,6 +636,332 @@ h6,
   width: 8.9rem;
   color: var(--light-blue);
 }
+.person{
+  position: absolute;
+  width: 18.8rem;
+  height: 20.2rem;
+  border-radius: 2rem;
+  border:.29rem solid var(--white);
+  opacity: 50%;
+  padding: 1rem;
+  top: 217rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.person--icon{
+  width: 6rem;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: var(--light-white);
+}
+.person--text{
+  color: var(--white);
+  font-weight: bold;
+}
+.person--link{
+  color: var(--light-white);
+  font-weight: bold;
+}
+.termometer{
+  position: absolute;
+  width: 18.8rem;
+  height: 20.2rem;
+  border-radius: 2rem;
+  border:.29rem solid var(--white);
+  opacity: 50%;
+  padding: 1rem;
+  top: 243rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.termometer--icon{
+  width: 6rem;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: var(--light-white);
+}
+.termometer--text{
+  font-weight: bold;
+  color: var(--white);
+}
+.termometer--link{
+  font-weight: bold;
+  color: var(--light-white);
+}
+.registration{
+  width: 37.4rem;
+  height: 116.5rem;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content:  flex-start;
+  position: absolute;
+  top: 269.5rem;
+  left: 0;
+}
+.registration--header{
+  width: 23rem;
+  height: 5.8rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--dark-blue);
+  position: absolute;
+  top: 3rem;
+  text-align: center;
+}
+.registration__box{
+  width: 30.5rem;
+  height: 43.7rem;
+  background-color: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  position: absolute; 
+  top: 13rem;
+  align-items: center;
+  z-index: 1;
+  border-radius: 1rem;
+
+}  
+.registration__box--header{
+  width: 6.8rem;
+  height: 3.4rem;
+  font-size: 1.4rem;
+  color: var(--white);
+  font-weight: bold;
+  position: absolute;
+  top: 2rem;
+}
+.registration__box--img-virus{
+  width: 15rem;
+  height: 7rem;
+  position: absolute;
+  top: -2.5rem;
+  left: -6rem;
+}
+.registration__box--img{
+  z-index: 2;
+  width: 30.7rem;
+  height: 36.5rem;
+  position: absolute;
+  border-radius: 1.5rem;
+  top: 7.2rem;
+}
+.registration__box--btn{
+  position: absolute;
+  top: 34rem;
+  border: none;
+  z-index: 3;
+  width: 20rem;
+  height: 5rem;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  color: var(--white);
+  background-color: var(--light-gray);
+}
+.input--form{
+  background-color: var(--input-gray);
+  border: none;
+  color: var(--gray);
+}
+.registered__form{
+  width: 32rem;
+  height: 46.5rem;
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;  
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  top: 63rem;
+  left: 4rem;
+  font-size: 1.4rem;
+
+}
+.registered__form--full-name{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+  width: 20.5rem;
+  height: 8.7rem;
+}
+.registered__form--input-name{
+  
+  width: 30.5rem;
+  height: 5rem;
+  border-radius: 1rem;
+}
+.registered__form--number{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+  width: 32rem;
+  height: 30.9rem;
+}
+.registered__form--input-number{
+  width: 30.5rem;
+  height: 5rem;
+  border-radius: 1rem;
+}
+.registered__form--number-btn{
+  width: 15rem;
+  height: 5rem;
+  border-radius: 1rem;
+}
+.registered__form--number-btn-submit{
+  width: 30.5rem;
+  height: 5rem;
+}
+.registered__form--number-footer{
+  width: 29.8rem;
+  height: 1.7rem;
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  top: 46.5rem;
+  font-size: 1.3rem;
+  font-weight: bold
+}
+.form--btn{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.registered__form--number-link-check{
+  color: var(--light-blue);
+}
+.registered__form--number-link-reg{
+  color: var(--black);
+  opacity: 85%;
+}
+.symptoms{
+  background-image: url(./44d72135d26cf838b32f4d954c221a6e.jfif);
+  width: 33.5rem;
+  height: 28.7rem;
+  position: absolute;
+  top: 386rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2rem;
+}
+.symptoms__header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+}
+.symptoms__header--man{
+  position: absolute;
+  top: 15.9rem;
+  width: 22rem;
+  height: 16.7rem;
+}
+.symptoms__header--head-span{
+  color: var(--light-blue);
+}
+.symptoms__header--head-text{
+  text-align: center;
+  color: var(--white);
+  font-weight: bold;
+}
+.symptoms__header--head{
+  color: var(--white);
+  font-weight: bold;
+}
+.symptoms__header--body-text{
+  font-size: 1rem;
+  width: 25rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--light-white);
+}
+.img--virus{
+  width: 7.1rem;
+  height: 4.1rem;
+  z-index: 3;
+
+}
+.symptoms__header--virus-right-once{
+  position: absolute;
+  top: 17.5rem;
+  left: 21rem;
+}
+.symptoms__header--virus-right-second{
+  position: absolute;
+  top: 21.5rem;
+  left: 23rem;
+}
+.symptoms__header--virus-right-third{
+  position: absolute;
+  top: 25.5rem;
+  left: 25rem;
+}
+.symptoms__header--virus-left-once{
+  position: absolute;
+  top: 17.5rem;
+  right: 21rem;
+}
+.symptoms__header--virus-left-second{
+  position: absolute;
+  top: 21.5rem;
+  right: 23rem;
+}
+.symptoms__header--virus-left-third{
+  position: absolute;
+  top: 25.5rem;
+  right: 25rem;
+}
+.symptoms__header--virus{
+  display: flex;
+
+}
+.text--virus{
+  color: var(--light-blue);
+  background-color: var(--light-gray);
+  border-radius: .4rem;
+  padding: .5rem;
+  z-index: 2;
+
+}
+.symptoms__header--virus-right-text-once{
+  position: absolute;
+  top: 18.5rem;
+  left: 25.5rem;
+}
+.symptoms__header--virus-right-text-second{
+  position: absolute;
+  top: 22.5rem;
+  left: 27.5rem;
+  font-size: .8rem;
+}
+.symptoms__header--virus-right-text-third{
+  position: absolute;
+  top: 26.5rem;
+  left: 29.5rem;
+}
+.symptoms__header--virus-left-text-once{
+  position: absolute;
+  top: 18.5rem;
+  right: 25.5rem;
+}
+.symptoms__header--virus-left-text-second{
+  position: absolute;
+  top: 22.5rem;
+  right: 27.5rem;
+
+}
+.symptoms__header--virus-left-text-third{
+  position: absolute;
+  top: 26.5rem;
+  right: 29.5rem;
+  font-size: .7rem;
+}
+
 @media only screen and (min-width: 375px) {
   .navbar {
     padding-left: 25px;
