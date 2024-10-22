@@ -1,5 +1,5 @@
 :root {
-  --primary: #7f56d9;
+  --primary: #18c2ec;
   --primary-light: #c7a0f9;
   --background: #f9fafb;
   --dark-blue:#0B153C;
@@ -49,8 +49,8 @@ h2,
 }
 h3,
 .heading-large {
-  font-size: 3.6rem;
-  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 h4,
 .heading-medium {
@@ -101,7 +101,7 @@ h6,
   text-align: center;
 }
 .btn-primary {
-  background-color: var(--primary);
+  background-color: var(--light-blue);
   color: var(--white);
 }
 
@@ -423,6 +423,7 @@ h6,
   flex-direction: column;
 }
 .navbar {
+  z-index: 3;
   border-radius: 100px;
   height: 4.5rem;
   width: 30.4rem;
@@ -533,6 +534,7 @@ h6,
   max-height: 0;
   padding: 0;
   top: 0;
+  
 }
 .burger-menu__toggle {
   position: relative;
@@ -556,9 +558,9 @@ h6,
   position: absolute;
   right: 0;
   left: 0;
-  top: -10px;
+  top: 12px;
   transition: all 1s ease;
-  z-index: -1;
+  z-index: 1;
   padding-top: 40px;
 }
 .burger-menu__list li {
@@ -734,6 +736,10 @@ h6,
   font-weight: bold;
   position: absolute;
   top: 2rem;
+}
+.registered__form--small-text-number{
+  color: var(--black);
+  opacity: 70%;
 }
 .registration__box--img-virus{
   width: 15rem;
@@ -962,6 +968,199 @@ h6,
   font-size: .7rem;
 }
 
+
+.feedback{
+  width: 31.4rem;
+  height: 102rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 32.7rem;
+  background-image: url(./backgroundblue.jpg);
+  z-index: 1;
+}
+.feedback__header{
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  text-align: center;
+  gap: 1rem;
+}
+.feedback__header--text-head{
+  font-size: 1.4rem;
+  color: var(--light-blue);
+  font-weight: bold;
+}
+.feedback__header--text-body{
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+.feedback__header--text-footer{
+  font-size: 1.4rem;
+
+}
+.plan__card--background{
+  z-index: 2;
+  width: 16.4rem;
+  height: 21rem;
+}
+.plan__cards{
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+.plan__card--text-img{
+display: flex;
+gap: 1.5rem;
+align-items: center;
+}
+.plan__card--img{
+  width: 5.3rem;
+  height: 5.3rem;
+  border-radius: 1.3rem;
+}
+.plan__card--one{
+  width: 27.5rem;
+  height: 15rem;
+  position: absolute;
+  top: 19rem;
+  left: 3rem;
+
+  background-color: var(--light-gray);
+  border-radius: 1.3rem;
+  padding: 2rem;
+  gap: 3rem;
+}
+.plan__card--one-text{
+  font-size: 1.3rem;
+  text-align: center;
+}
+.plan__card--one-background{
+  position: absolute;
+  z-index: 2;
+  top: 19rem;
+  left: 11rem;
+  opacity: 20%;
+}
+
+.plan__card--second{
+  width: 27.5rem;
+  height: 15rem;
+  position: absolute;
+  top: 42rem;
+  left: 3rem;
+  border-radius: 1.3rem;
+  padding: 2rem;
+  gap: 3rem;
+  color: var(--white);
+}
+.back__ground--opa{
+  background-color: var(--light-blue) ;
+  opacity: 80%;
+
+}
+.plan__card--second-text{
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--white);
+}
+.plan__card--second-background{
+  position: absolute;
+  z-index: 2;
+  top: 42rem;
+  left: 11rem;
+  opacity: 40%;
+}
+
+
+
+.plan__card--third{
+  width: 27.5rem;
+  height: 15rem;
+  position: absolute;
+  top: 65rem;
+  left: 3rem;
+  background-color: var(--light-gray);
+  border-radius: 1.3rem;
+  padding: 2rem;
+  gap: 3rem;
+
+}
+.plan__card--third-text{
+  font-size: 1.3rem;
+  text-align: center;
+}
+.plan__card--third-background{
+  position: absolute;
+  z-index: 2;
+  top: 65rem;
+  left: 11rem;
+  opacity: 20%;
+
+}
+
+
+.card__footer{
+  height: 20rem;
+  left: 4rem;
+  width: 30rem;
+  background-color: var(--light-gray);
+  position: absolute;
+  top: 517rem;
+  z-index: 2;
+  border-radius: 2rem;
+}
+.card__footer--email{
+  height: 16rem;
+  left: 1rem;
+  width: 28rem;
+  background-color: var(--light-blue);
+  position: absolute;
+  top: 2rem;
+  z-index: 3;
+  border-radius: 2rem;
+}
+.card__footer--text{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+}
+.card__footer--input-email{
+  width: 23rem;
+  height: 4rem;
+  position: absolute;
+  top: 9rem;
+  left: 2rem;
+  border-radius: 5rem;
+  color: var(--light-gray);
+  border: none;
+  padding-left: 2rem;
+}
+.card__footer--input-img{
+  width: 5rem;
+  height: 3rem;
+  position: absolute;
+  top: 8.9rem;
+  left: 21rem;
+  padding: .7rem;
+  background-color: var(--dark-blue);
+  border-radius: 0rem 5rem 5rem 0rem
+}
+.footer-m{
+  width: 37.4rem;
+  height: 35rem;
+  top: 527rem;
+  position: absolute;
+  background-image: url(./44d72135d26cf838b32f4d954c221a6e.jfif);
+
+}
 @media only screen and (min-width: 375px) {
   .navbar {
     padding-left: 25px;
@@ -994,19 +1193,388 @@ h6,
   border-radius: 16px;
 }
 /*  small devices (phones, 600px and down) */
-@media only screen and (max-width: 768px) {
-  .container {
-    min-width: 375;
-    max-width: 425px;
+@media only screen and (min-width: 768px) {
+  .header__background{
+    width: 76.8rem;
   }
+  .header__background{
+    background-image: url(./44d72135d26cf838b32f4d954c221a6e.jfif);
+    height: 100.4rem;
+    width: 76.8rem;
+    position: relative;
+  }
+  .logo__text {
+    font-size: 3rem;
+}
+  .burger-menu__list.burger-menu--collapse {
+    max-height: 0;
+    padding: 0;
+    top: 0;
+}
+.burger-menu__toggle {
+  display: none;
+  background-color: #C4C4C426;
+}
+.hero__title{
+  font-size: 1.8rem;
+  width: 48rem;
+}
+.hero__body-text1{
+  font-size: 2.8rem;
+  width: 39rem;
+  margin-top: 1rem;
+}
+.hero__body-text2{
+  font-size: 1.5rem;
+  width: 39rem;
+  margin-top: 3rem;
+}
+.img__covid19{
+  position: absolute;
+  top: 43rem;
+  left: 21rem;
+}
+.clock--text{
+  font-size: 2rem;
+}
+.clock{
+  width: 2.9rem;
+  height: 3rem;
+}
+.back__ground--very-light,.back__ground--light{
+  width: 70.6rem;
+  height: 16.8rem;
+}
+.calender {
+  left: 39rem;
+  position: absolute;
+  top: 0rem;
+  width: 18rem;
+}
+.hero__btn{
+  left: 39rem;
+  position: absolute;
+  top: 6rem;
+}
+.back__ground--very-light{
+  height: 18.8rem;
+}
+.vaccin__small-size{
+width: 14.8rem;
+height: 3rem;
+}
+.vaccin__large-size{
+  width: 14.8rem;
+  height: 5rem;
+  }
+.vaccin{
+  height: 8rem;
+}
+.database{
+  width: 76.8rem;
+}
+.database__form, .database--header{
+  width: 70.8rem;
+  font-size: 1.5rem;
+}
+.inputs{
+  width: 65.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input__name, .input__number{
+  width: 50rem;
+}
+.input__check{
+  position: absolute;
+  top: 25rem;
+  left: 6rem;
+}
+.database--footer{
+  width: 37rem;
+  position: absolute;
+  top: 32rem;
+  left: 15rem;
+  font-size: 1.2rem;
+}
+.info__virus{
+  width: 76.8rem;
+}
+.info__virus--largr-text{
+  font-size: 3.5rem;
+  width: 38rem;
+}
+.info__virus--small-text{
+  margin-top: 2rem;
+  font-size: 3rem;
+  width: 66rem;
+}
+.hero__body-btn2{
+  left: 23rem;
+}
+.hero__body-btn1{
+  left: 6rem;
+}
+.protects__sheild {
+  top: 198rem;
+  height: 25rem;
+}
+.sheild{
+  width: 5rem;
+}
+.protects__sheild--text-large{
+  font-size: 2.5rem;
+}
+.protects__sheild--text-small{
+  font-size: 1.6rem;
+}
+.person{
+top: 237rem;
+}
+.termometer{
+  top: 237rem;
+left: 37rem;
+}
+.protect__text{
+  font-size: 1.5rem;
+}
+.registration{
+  width: 76.8rem;
+  top: 263.5rem;
+  align-items: flex-start;
+  padding-left: 8rem ;
+}
+.registered__form{
+  width: 68.8rem;
+  gap: 6rem;
+}
+.registered__form--input-name ,.registered__form--input-number {
+  width: 46rem;
+}
+.registered__form--small-text-number{
+font-size: 2rem;
+width: 47rem;
+}
+.registered__form--number-btn{
+  left: 52rem;
+  top: 25rem;
+}
+.registered__form--number-btn-submit{
+  left: 21rem;
+  top: 35rem;
+}
+.registered__form--number-footer{
+  position: absolute;
+  top: 46rem;
+  left: 21rem;
+}
+.symptoms{
+width: 76.8rem;
+top: 380rem;
+}
+.symptoms__header--head{
+  font-size: 1.2rem;
+}
+.symptoms__header--body-text{
+  font-size: 1.8rem;
+  width: 54rem;
+}
+.symptoms__header--head-text{
+  font-size: 1.8rem;
+
+}
+.symptoms__header--man{
+width: 44.4rem;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 375px) {
+.symptoms__header--virus-right-once{
+  left: 44rem;
 }
+.symptoms__header--virus-right-second{
+  left: 50rem;
+}
+.symptoms__header--virus-right-third{
+  left: 54rem;
+}
+.symptoms__header--virus-left-once{
+  right: 44rem;
+}
+.symptoms__header--virus-left-second{
+  right: 50rem;
+}
+.symptoms__header--virus-left-third{
+  right: 54rem;
+}
+.symptoms__header--virus-right-text-once{
+  left: 48.5rem;
+  font-size: 1.2rem;
+}
+.symptoms__header--virus-right-text-second{
+  left: 54.5rem;
+  font-size: 1.2rem;
+}
+.symptoms__header--virus-right-text-third{
+  left: 58.5rem;
+  font-size: 1.2rem;
 
+}
+.symptoms__header--virus-left-text-once{
+  right: 48.5rem;
+  font-size: 1.2rem;
+
+}
+.symptoms__header--virus-left-text-second{
+  right: 54.5rem;
+  font-size: 1.2rem;
+
+
+}
+.symptoms__header--virus-left-text-third{
+  right: 58.5rem;
+  font-size: 1.2rem;
+}
+.feedback{
+  width: 76.8rem;
+}
+.feedback__header--text-footer{
+  width: 70rem;
+}
+.plan__card--one,.plan__card--second,.plan__card--third{
+  left: 23rem;
+}
+.plan__card--background{
+  left: 29rem;
+}
+.footer-m{
+  width: 76.8rem;
+  left: 0rem;
+  top:520rem;
+}
+.card__footer{
+
+  left: 17rem;
+  top: 511rem;
+  width: 40rem;
+  height: 25rem;
+}
+.card__footer--email{
+  display: flex;
+
+  width: 38rem;
+  height: 21rem;
+}
+.card__footer--text-head{
+  font-size: 2.4rem;
+}
+.card__footer--text-body{
+  font-size: 1.6rem;
+}
+.card__footer--input-email{
+  left: 6rem;
+  top: 11rem;
+}
+.card__footer--input-img{
+  left: 25rem;
+  top: 11rem;
+}
+}
 /* Large devices (laptops/desktops, 1280px and up) */
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
+  .header__background{
+    height: 76.8rem;
+    width: 102.4rem;
+  }
+  .img__covid19{
+    top: 7rem;
+    left: 53rem;
+  }
+  .clock--tesk{
+    top: 50rem;
+    left: 3rem;
+  }
+  .clock--text{
+    left: 8rem;
+  }
+  .back__ground--very-light{
+    width: 85.6rem;
+    height: 19.8rem;
+    top: 57rem;
+  }
+  .back__ground--light{
+    width: 85.6rem;
+    height: 16.8rem;
+    top: 60rem;
+  }
+  .address__box--vectors{
+    top: 64rem;
+  }
+  .database{
+    width: 102.4rem;
+    height: 31.4rem;
+  }
+  .database__form{
+    width: 85.9rem;
+    top: 2rem;
+  }
+  .database--header{
+    width: 85.9rem;
+  }
+  .input__name{
+    left: 0;
+    width: 27rem;
+    position: absolute;
+    top: 8rem;
+  }
+  .input__number{
+    left: 32rem;
+    width: 27rem;
+    position: absolute;
+    top: 8rem;
+  }
+  .input__check{
+    left: 71rem;
+    width: 10rem;
+    position: absolute;
+    top: 8.5rem;
+  }
+  .database--footer{
+    top: 17.5rem;
+    left: 25rem;
+  }
+  .database__form{
+    height: 26.3rem;
+  }
+  .info__virus{
+    width: 102.4rem;
+    height: 50rem;
+  }
+  .info__virus--small-text{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 120rem;
+    left: 56rem;
+    width: 42rem;
+  }
+  .protects__sheild{
+    top: 138rem;
+  }
+  .person{
+    top: 145rem;
+    left: 40rem;
+  }
+  .termometer{
+    top: 145rem;
+    left: 70rem;
+  }
+  .registration{
+    top: 175.2rem;
+    width: 102.4rem;
+  }
+  .registration__box{
+    left: 20rem;
+  }
 }
 
 
